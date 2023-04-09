@@ -16,6 +16,7 @@
 		CF68A8CC29E2BE1F00C05475 /* MyFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF68A8CB29E2BE1F00C05475 /* MyFirstAppTests.swift */; };
 		CF68A8D629E2BE1F00C05475 /* MyFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF68A8D529E2BE1F00C05475 /* MyFirstAppUITests.swift */; };
 		CF68A8D829E2BE1F00C05475 /* MyFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF68A8D729E2BE1F00C05475 /* MyFirstAppUITestsLaunchTests.swift */; };
+		CF68A8EC29E2E9AD00C05475 /* swiftForDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68A8EB29E2E9AD00C05475 /* swiftForDefine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,10 @@
 		CF68A8D129E2BE1F00C05475 /* MyFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF68A8D529E2BE1F00C05475 /* MyFirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITests.swift; sourceTree = "<group>"; };
 		CF68A8D729E2BE1F00C05475 /* MyFirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF68A8E429E2E8E700C05475 /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		CF68A8E729E2E95200C05475 /* MyFirstApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFirstApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF68A8EA29E2E99D00C05475 /* swiftForDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swiftForDefine.h; sourceTree = "<group>"; };
+		CF68A8EB29E2E9AD00C05475 /* swiftForDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swiftForDefine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,10 @@
 				CF68A8BD29E2BE1F00C05475 /* Assets.xcassets */,
 				CF68A8BF29E2BE1F00C05475 /* LaunchScreen.storyboard */,
 				CF68A8C229E2BE1F00C05475 /* Info.plist */,
+				CF68A8E429E2E8E700C05475 /* define.h */,
+				CF68A8E729E2E95200C05475 /* MyFirstApp-Bridging-Header.h */,
+				CF68A8EA29E2E99D00C05475 /* swiftForDefine.h */,
+				CF68A8EB29E2E9AD00C05475 /* swiftForDefine.m */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 				TargetAttributes = {
 					CF68A8B029E2BE1D00C05475 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					CF68A8C629E2BE1F00C05475 = {
 						CreatedOnToolsVersion = 14.2;
@@ -260,6 +270,7 @@
 			files = (
 				CF68A8B929E2BE1D00C05475 /* ViewController.swift in Sources */,
 				CF68A8B529E2BE1D00C05475 /* AppDelegate.swift in Sources */,
+				CF68A8EC29E2E9AD00C05475 /* swiftForDefine.m in Sources */,
 				CF68A8B729E2BE1D00C05475 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,8 +446,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YT4L7QH32W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyFirstApp/Info.plist;
@@ -453,6 +466,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.exampleApp.MyFirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFirstApp/MyFirstApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,8 +478,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YT4L7QH32W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyFirstApp/Info.plist;
@@ -481,6 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.exampleApp.MyFirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFirstApp/MyFirstApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
